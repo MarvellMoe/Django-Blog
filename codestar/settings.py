@@ -29,7 +29,11 @@ SECRET_KEY = 'django-insecure-6)9d!x8ki=7oslcnp%vk69y!$6sm-*80vdovu-5h$@yxqxvkz6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-marvellmoe-djangoblog-98mx8lsntui.ws.codeinstitute-ide.net','django-blog-bwp3.onrender.com',]
+ALLOWED_HOSTS = [
+    '8000-marvellmoe-djangoblog-98mx8lsntui.ws.codeinstitute-ide.net',
+    'django-blog-bwp3.onrender.com',
+    'postgres://up1s1gefwbz:L6MtcywmdorL@ep-gentle-mountain-a23bxz6h.eu-central-1.aws.neon.tech/scorn_spout_reach_113623',
+]
 
 # Application definition
 
@@ -87,6 +91,11 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 DATABASES = {
     'default':dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeanyapp.com",
+    "https://*.onrender.com"
+]
 
 
 # Password validation
