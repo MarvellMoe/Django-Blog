@@ -26,10 +26,7 @@ SECRET_KEY = 'django-insecure-6)9d!x8ki=7oslcnp%vk69y!$6sm-*80vdovu-5h$@yxqxvkz6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [
-    '8000-marvellmoe-djangoblog-98mx8lsntui.ws.codeinstitute-ide.net',
-    '.renderapp.com',
-]
+ALLOWED_HOSTS = ['8000-marvellmoe-djangoblog-98mx8lsntui.ws.codeinstitute-ide.net',]
 
 # Application definition
 
